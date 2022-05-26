@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NP</title>
+    <!-- BOXICON -->
+    <link rel="stylesheet" href="./assets/img/boxicons-master/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header scroll-header" id="header">
+        <div class="nav container">
+            <div class="nav__logo">
+                <a href="#">
+                    <i class='bx bxs-shopping-bags nav__logo-img'></i>  
+                    NGAPHAN
+                </a>
+            </div>
+
+            <input type="checkbox" class="menu__check" id="menu__check-input">
+
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <label for="menu__check-input" class='menu__exit bx bx-x cart__close' id="cart-close"></label> 
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Trang chủ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Nổi bật</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Sản phẩm</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Featured" class="nav__link">Mới</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__theme">
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </div>
+
+                <label for="cart__check-input" class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </label>
+
+                <label for="menu__check-input" class="menu__mobile">
+                    <i class='bx bx-grid-alt'></i>
+                </label>
+
+                
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CART -->
+    <input type="checkbox" name="" class="cart__check" id="cart__check-input">
+    
+    <label for="cart__check-input" class="cart__overlay"></label>
+    
+    <div class="cart" id="cart">
+        <label for="cart__check-input" class='bx bx-x cart__close' id="cart-close"></label> 
+
+        <h2 class="cart__title-center">Giỏ Hàng</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="./assets/img/new1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__tilte">Sản phẩm 1</h3>
+                    <span class="cart__price">1.000.000đ</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+    
+                            <span class="cart__amount-number">1</span>
+    
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="./assets/img/new1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__tilte">Sản phẩm 2</h3>
+                    <span class="cart__price">500.000đ</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+    
+                            <span class="cart__amount-number">1</span>
+    
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="./assets/img/new2.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__tilte">Sản phẩm 3</h3>
+                    <span class="cart__price">1.500.000đ</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+    
+                            <span class="cart__amount-number">1</span>
+    
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <div class="home__social">
+                            <a href="" class="home__social-link">
+                                Twitter
+                            </a>
+                            <a href="" class="home__social-link">
+                                Intagram
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100061443867069" class="home__social-link">
+                                Facebook
+                            </a>
+
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">NEW AAAAA <br> BBBBBB</h1>
+                            <p class="home__desciption">
+                                Latest arrival of the new imported watches of the B720 series, 
+                            with a modern and resistant design.
+                            </p>
+                            <span class="home__price">2.300.000đ</span>
+
+                             <div class="home__btns ">
+                                 <a href="#" class="button button--gray button--small">
+                                    Khám phá
+                                 </a>
+                                  <button class="button home__button">THÊM VÀO GIỎ</button>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="col l-6">
+                        <div class="home__img-bg">
+                            <img src="./assets/img/new3.png" alt="" class="home__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                SẢN PHẨM NỔI BẬT
+            </h2>
+            <div class="fearuted__container grid wide">
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="featured__card">
+                            <span class="featured__tag">Giảm giá</span>
+                            <img src="./assets/img/new3.png" alt="" class="featured__img">
+                            <div class="featured__data">
+                                <h3 class="featured__title">TÊN SẢN PHẨM</h3>
+                                <span class="featured__price">2.200.000đ</span> 
+                            </div>
+                            <button class="featured__button button">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="featured__card">
+                            <span class="featured__tag">Giảm giá</span>
+                            <img src="./assets/img/new3.png" alt="" class="featured__img">
+                            <div class="featured__data">
+                                <h3 class="featured__title">TÊN SẢN PHẨM</h3>
+                                <span class="featured__price">2.200.000đ</span> 
+                            </div>
+                            <button class="featured__button button">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="featured__card">
+                            <span class="featured__tag">Giảm giá</span>
+                            <img src="./assets/img/new3.png" alt="" class="featured__img">
+                            <div class="featured__data">
+                                <h3 class="featured__title">TÊN SẢN PHẨM</h3>
+                                <span class="featured__price">2.200.000đ</span> 
+                            </div>
+                            <button class="featured__button button">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY -->
+        <section class="story section container grid" id="story">
+            <div class="row">
+                <div class="col l-6">
+                    <div class="story__images">
+                        <img src="./assets/img/new2.png" alt="" class="story__img">
+                        <div class="story__squre"></div>
+                    </div>
+                </div>
+                <div class="col l-6">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">Câu chuyện của chúng tôi</h2>
+                        <h1 class="story__title">Sản phẩm cảm hứng của năm</h1>
+                        <p href="" class="story__description">The latest and modern watches of this year, is available in various presentations in this store, discover them now.</p>
+                        <a href="#" class="button button--smaill">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products section container" id="products">
+            <h2 class="section__title">Sản phẩm</h2>
+            <div class="products__container grid wide">
+                <div class="row">
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 products__col">
+                        <div class="products__card">
+                            <img src="./assets/img/new3.png" alt="" class="products__img">
+                            <h3 class="products__title">TÊN SẢN PHẨM</h3>
+                            <span class="products__price">2.300.400</span>
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
